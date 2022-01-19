@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Nunito:wght@500&family=Space+Mono&display=swap');
+
 
 
 @keyframes spin {
@@ -7,17 +9,11 @@
 
 
 body, html {
-    
     margin: 0;
-}
-.landing {
-    z-index: 1;
-    margin: 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./images/space-bg1.jpeg);
-    background-size: cover;
+    padding: 0;
     width: 100%;
-    height: 100%;
 }
+
 .preloader {
     position: fixed;
     z-index: 1000;
@@ -27,6 +23,7 @@ body, html {
     color: white;
     font-size: 180%;
     text-align: center;
+    text-transform: uppercase;
 }
 .loading {
     background-color: rgb(7, 7, 7);
@@ -40,4 +37,70 @@ body, html {
     height: 10vh;
     animation: spin 2s linear infinite;
   }
-  
+
+nav {
+    z-index: 2;
+    display: flex;
+    position: fixed;
+    margin: 0;
+    padding: 10px;
+    align-items: center;
+    background-color: transparent;
+    top: 0;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#inverted {
+    filter: invert();
+}
+
+nav .logo button {
+    background-color: transparent;
+    border: transparent 0px solid;
+}
+nav img.logo {
+    height: 13vh;
+}
+
+nav .name{
+    position: fixed;
+    left: 50%;
+    top: 3%;
+    transform: translateX(-50%);
+    font-family: 'Space Mono';
+    color: white;
+    font-size: 3.5vh;
+}
+nav .contact {
+    padding-right: 5vh;
+    text-align: center;
+}
+nav .contact ul {
+    word-spacing: 2vh;
+}
+nav .contact li {
+    display: inline-block;
+}
+nav .contact img {
+    width: 5vh;
+}
+
+
+.landing {
+    z-index: 1;
+    margin: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./images/space-bg1.jpeg);
+    background-size: cover;
+    background-position: fixed;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+
+.info {
+    z-index: 3;
+    height: 100vh;
+    background-color: rgb(15, 15, 15);
+}
