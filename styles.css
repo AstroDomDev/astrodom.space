@@ -104,3 +104,28 @@ nav .contact img {
     height: 100vh;
     background-color: rgb(15, 15, 15);
 }
+
+@media screen and (max-width: 800px) {
+.loading {
+    top: calc(50% - 10vw);
+    left: calc(50% - 10vw);
+    width: 10vw;
+    height: 10vw;
+  }
+nav img.logo {
+    height: 13vw;
+}
+nav .name{
+    font-size: 3.5vw;
+}
+nav .contact {
+    padding-right: 5vw;
+}
+nav .contact ul {
+    word-spacing: 2vw;
+}
+nav .contact img {
+    width: 5vw;
+}
+
+}
