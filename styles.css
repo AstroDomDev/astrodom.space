@@ -84,8 +84,12 @@ nav .contact li {
 }
 nav .contact img {
     width: 5vh;
+    transition: filter 0.5s;
 }
-
+nav .contact img:hover {
+    filter: brightness(0.5) sepia(1) saturate(100000%);
+    transition: filter 0.5s;
+}
 
 .landing {
     z-index: 1;
