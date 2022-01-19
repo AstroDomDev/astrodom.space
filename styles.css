@@ -82,14 +82,27 @@ nav .contact ul {
 nav .contact li {
     display: inline-block;
 }
+nav .contact a#text{
+    font-family: "Black Ops One";
+    font-weight: normal;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    transition: color 0.2s;
+}
+nav .contact a#text:hover {
+    transition: color 0.5s;
+    color: red;
+}
 nav .contact img {
     width: 5vh;
-    transition: filter 0.5s;
+    transition: filter 0.2s;
 }
 nav .contact img:hover {
     filter: brightness(0.5) sepia(1) saturate(100000%);
     transition: filter 0.5s;
 }
+
 
 .landing {
     z-index: 1;
@@ -104,6 +117,8 @@ nav .contact img:hover {
 
 
 .info {
+    width: 100%;
+    text-align: center;
     z-index: 3;
     height: 100vh;
     background-color: rgb(15, 15, 15);
