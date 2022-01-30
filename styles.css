@@ -49,12 +49,29 @@ nav {
     top: 0;
     justify-content: space-between;
     width: 100%;
+    transition: transform 0.5s;
+}
+nav .logo.hidden {
+    transform: translateY(-130%);
+    transition: transform 0.5s;
+}
+nav .contact.hidden {
+    transform: translateY(-130%);
+    transition: transform 0.5s;
+}
+nav .name.hidden {
+    font-size: 2vh;
+    transition: 0.5s;
+    top: -10%;
 }
 
 #inverted {
     filter: invert();
 }
 
+nav .logo {
+    transition: transform 0.5s;
+}
 nav .logo button {
     background-color: transparent;
     border: transparent 0px solid;
@@ -71,10 +88,12 @@ nav .name{
     font-family: 'Space Mono';
     color: white;
     font-size: 3.5vh;
+    transition: 0.5s;
 }
 nav .contact {
     padding-right: 5vh;
     text-align: center;
+    transition: transform 0.5s;
 }
 nav .contact ul {
     word-spacing: 2vh;
@@ -120,7 +139,7 @@ nav .contact img:hover {
     width: 100%;
     text-align: center;
     z-index: 3;
-    height: 100vh;
+    height: 150vh;
     background-color: rgb(15, 15, 15);
 }
 
