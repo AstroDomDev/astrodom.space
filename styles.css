@@ -134,6 +134,25 @@ nav .contact img:hover {
     text-align: center;
 }
 
+.slogan {
+    margin: auto;
+}
+.landing .slogan * {
+    font-size: 7vh;
+    color: white;
+    font-family: 'Black Ops One';
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 1s;
+}
+.landing .slogan .show {
+    opacity: 1;
+    transition: opacity 2s;
+}
+
 
 .info {
     width: 100%;
@@ -164,6 +183,9 @@ nav .contact ul {
 }
 nav .contact img {
     width: 5vw;
+}
+.landing .slogan * {
+    font-size: 7vw;
 }
 
 }
