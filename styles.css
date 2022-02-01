@@ -153,8 +153,8 @@ nav .contact img:hover {
     transition: 2s;
 }
 .landing .slogan .show.final {
-    font-size: 4.5vh;
-    transition: 2s;
+    font-size: 4.25vh;
+    transition: 1.5s;
     top: 40%;
 }
 

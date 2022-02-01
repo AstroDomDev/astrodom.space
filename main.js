@@ -18,6 +18,7 @@ function intro() {
     if ($('.slogan #4').hasClass('show')) {
     var dlay = 1100
     $('.slogan #4').removeClass('show')
+    $('.slogan #4').removeClass('final')
     } else {
         var dlay = 0
     }
@@ -38,7 +39,7 @@ function intro() {
                             setTimeout(function() {
                                 $('.slogan #4').addClass('final')
                                 $('.slogan #planet').addClass('visible')
-                            },2750)
+                            },2000)
                     }, 1100)
                 }, 2250)
             }, 1100)
