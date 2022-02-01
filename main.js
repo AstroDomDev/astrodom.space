@@ -48,14 +48,17 @@ function intro() {
 }, dlay)
 }
 
-var lastScroll = 0;
-$('body').scroll(function()
-{
-var nowScrollTop = $(this).scrollTop();
-if (nowScroll > lastScroll){
-    $('nav').addClass('hidden')
-} else if (nowScroll < lastScroll) {
-    $('nav').addClass('hidden')
-}
-lastScroll = nowScroll;
-});
+$(window).scroll(function() {
+    var landingEnd = $('.landing').position().top + $('.landing').height();
+    var navTop = $(document).scrollTop();
+
+    if (navTop > landingEnd) {
+        $('.logo').addClass('hidden')
+        $('.contact').addClass('hidden')
+        $('.name').addClass('hidden')
+    } else {
+        $('.logo').removeClass('hidden')
+        $('.contact').removeClass('hidden')
+        $('.name').removeClass('hidden')
+    }
+})
