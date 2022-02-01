@@ -146,13 +146,32 @@ nav .contact img:hover {
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
-    transition: opacity 1s;
+    transition: 1s;
 }
 .landing .slogan .show {
     opacity: 1;
-    transition: opacity 2s;
+    transition: 2s;
+}
+.landing .slogan .show.final {
+    font-size: 4.5vh;
+    transition: 2s;
+    top: 40%;
 }
 
+.landing .slogan img {
+    opacity: 0;
+    transition: 1s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 45vh;
+    transform: translate(-50%, -50%);
+}
+
+.landing .slogan img.visible {
+    opacity: 1;
+    transition: 1s;
+}
 
 .info {
     width: 100%;
@@ -187,5 +206,10 @@ nav .contact img {
 .landing .slogan * {
     font-size: 7vw;
 }
-
+.landing .slogan .show.final {
+    font-size: 4.5vw;
+}
+.landing .slogan img {
+    width: 45vw;
+}
 }
