@@ -176,7 +176,7 @@ nav .contact img:hover {
 .info {
     box-sizing: border-box;
     padding: 1vw;
-    width: 100vw;
+    width: 100%;
     text-align: center;
     z-index: 3;
     height: min-content;
@@ -212,10 +212,68 @@ nav .contact img:hover {
     display: block;
     font-size: 2.5vh;
 }
-.info .projects {
+.info .project-block {
     grid-column-start: 1;
     grid-column-end: 4;
 }
+.info .projects {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 45vw);
+    grid-auto-rows: min-content;
+    column-gap: 3vw;
+    row-gap: 3vw;
+
+}
+
+.info .project#website{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: 1vw;
+    background-color: rgb(15, 15, 15);
+    border-radius: 10px;
+}
+
+.info .projects .project h2 {
+    font-size: 2.5vw;
+}
+
+.info .projects .project .desc {
+    font-size: 2vw;
+}
+
+.info .projects .project a {
+    text-decoration: white underline;
+    font-size: 2vw;
+    color: white;
+    transition: color 0.2s;
+}
+.info .projects .project a:hover {
+    text-decoration: rgb(100, 31, 114) underline;
+    color: rgb(100, 31, 114);
+    transition: color 0.3s;
+}
+.info .projects .project ul.tags {
+    text-align: left;
+    width: 100%;
+    display: inline-block;
+    margin: 0px;
+    margin-top: 3vw;
+    margin-bottom: 1vw;
+}
+.info .projects .project li {
+    display: inline-block;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+.info .project .bullet {
+    display: inline-block;
+    background-color:rgb(100, 31, 114);
+    width: 1vw;
+    height: 1vw;
+    border-radius: 100%;
+}
+
 
 @media screen and (max-width: 800px) {
 .loading {
