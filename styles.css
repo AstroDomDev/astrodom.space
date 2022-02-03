@@ -307,4 +307,51 @@ nav .contact img {
 .landing .slogan img {
     width: 45vw;
 }
+.info {
+    display: block;
+}
+.info .box {
+    margin-top: 2vh;
+    padding: 2vh;
+}
+.info .box-title {
+    font-size: 5vw;
+}
+.info .box p {
+    font-size: 2.5vw;
+}
+.info .box li {
+    font-size: 2.5vw;
+}
+.info .projects {
+    display: block;
+}
+
+.info .project#website{
+    padding: 2vh;
+}
+
+.info .projects .project h2 {
+    font-size: 2.5vh;
+}
+
+.info .projects .project .desc {
+    font-size: 2vh;
+}
+
+.info .projects .project a {
+    font-size: 2vh;
+}
+.info .projects .project ul.tags {
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+}
+.info .projects .project li {
+    padding-left: 1vh;
+    padding-right: 1vh;
+}
+.info .project .bullet {
+    width: 1vh;
+    height: 1vh;
+}
 }
