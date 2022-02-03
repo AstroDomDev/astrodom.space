@@ -206,9 +206,12 @@ nav .contact img:hover {
     font-size: 2.5vh;
 }
 .info .box ul {
-    list-style:georgian;
+    padding: 0px;
+    text-align: center;
+    list-style:none;
 }
 .info .box li {
+    text-align: center;
     display: block;
     font-size: 2.5vh;
 }
