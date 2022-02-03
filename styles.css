@@ -70,7 +70,7 @@ nav .name.hidden {
 }
 
 nav .logo {
-    transition: transform 0.5s;
+    transition: transform 0.3s;
 }
 nav .logo button {
     background-color: transparent;
@@ -88,12 +88,12 @@ nav .name{
     font-family: 'Space Mono';
     color: white;
     font-size: 3.5vh;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 nav .contact {
     padding-right: 5vh;
     text-align: center;
-    transition: transform 0.5s;
+    transition: transform 0.3s;
 }
 nav .contact ul {
     word-spacing: 2vh;
@@ -174,11 +174,47 @@ nav .contact img:hover {
 }
 
 .info {
-    width: 100%;
+    box-sizing: border-box;
+    padding: 1vw;
+    width: 100vw;
     text-align: center;
     z-index: 3;
-    height: 150vh;
+    height: min-content;
+    padding-bottom: 3vw;
     background-color: rgb(15, 15, 15);
+    display: grid;
+    grid-template-columns: repeat(3, 30vw);
+    grid-template-rows: 40vh min-content;
+    column-gap: 3vw;
+    row-gap: 3vw;
+    color: white;
+    padding-top: 5vw;
+}
+.info .box {
+    overflow: hidden;
+    background-color:rgb(35, 35, 35);
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 1vw;
+}
+.info .box-title {
+    font-size: 5vh;
+}
+.info .box p {
+    font-size: 2.5vh;
+}
+.info .box ul {
+    list-style:georgian;
+}
+.info .box li {
+    display: block;
+    font-size: 2.5vh;
+}
+.info .projects {
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 
 @media screen and (max-width: 800px) {
@@ -208,6 +244,7 @@ nav .contact img {
 }
 .landing .slogan .show.final {
     font-size: 4.5vw;
+    top: 45%;
 }
 .landing .slogan img {
     width: 45vw;
