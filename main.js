@@ -1,6 +1,7 @@
 $(window).on("load", function() {
     $('.preloader').css('display', 'none')
     setTimeout(function() {intro()}, 2000)
+    navHide()
 })
 
 
@@ -46,9 +47,9 @@ function intro() {
 }, dlay)
 }
 
-$(window).scroll(function() {
+function navHide() {
     var landingEnd = $('.landing').position().top + $('.landing').height();
-    var navTop = $(document).scrollTop();
+    var navTop = $(document).scrollTop() + $('nav').height();
 
     if (navTop > landingEnd) {
         $('.logo').addClass('hidden')
@@ -59,4 +60,8 @@ $(window).scroll(function() {
         $('.contact').removeClass('hidden')
         $('.name').removeClass('hidden')
     }
+}
+
+$(window).scroll(function() {
+    navHide()
 })
