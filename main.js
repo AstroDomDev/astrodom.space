@@ -10,9 +10,6 @@ $(document).on("click", "#4", function() {
     }
 })
 
-function copy(args) {
-    navigator.clipboard.writeText(args);
-}
 
 function intro() {
     if ($('.slogan #4').hasClass('show')) {
