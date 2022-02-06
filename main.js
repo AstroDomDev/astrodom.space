@@ -12,7 +12,7 @@ $(document).on("click", "#4", function() {
 })
 
 $(document).on("click", "#admin", function() {
-    location.replace("https://astrodom.space/admin/admin")
+    location.replace("https://astrodom.space/admin/panel")
 })
 
 
