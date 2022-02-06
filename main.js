@@ -11,6 +11,11 @@ $(document).on("click", "#4", function() {
     }
 })
 
+$(document).on("click", "#admin", function() {
+    location.replace("./admin/admin.html")
+})
+
+
 function intro() {
     if ($('.slogan #4').hasClass('show')) {
     var dlay = 1100

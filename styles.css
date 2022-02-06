@@ -207,6 +207,7 @@ nav .contact img:hover {
 }
 .info .box ul {
     padding: 0px;
+    margin: 0px;
     text-align: center;
     list-style:none;
 }
@@ -275,6 +276,10 @@ nav .contact img:hover {
     width: 1vw;
     height: 1vw;
     border-radius: 100%;
+}
+
+footer {
+    background-color: black;
 }
 
 
