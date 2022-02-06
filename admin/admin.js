@@ -11,6 +11,6 @@ $(document).ready(function() {
 }
 })
 
-$(document).on('click', 'p', function() {
+$(document).on('click', '.return', function() {
     location.replace("../index.html")
 })
