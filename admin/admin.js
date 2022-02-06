@@ -6,11 +6,11 @@ $(document).ready(function() {
         $('.cover').css('display', 'none')
     } else {
         alert("Incorrect username or password.")
-        location.replace("../index.html")
+        location.replace("https://astrodom.space/")
     }
 }
 })
 
 $(document).on('click', '.return', function() {
-    location.replace("../index.html")
+    location.replace("https://astrodom.space/")
 })
