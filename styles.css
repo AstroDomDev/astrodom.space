@@ -238,6 +238,8 @@ nav .contact img:hover {
     border-radius: 10px;
 }
 .info .project {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
     padding: 1vw;
     background-color: rgb(15, 15, 15);
     border-radius: 10px;
@@ -344,6 +346,11 @@ nav .contact img {
 
 .info .project#website{
     padding: 2vh;
+}
+.info .project {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    padding: 1vh;
 }
 
 .info .projects .project h2 {
