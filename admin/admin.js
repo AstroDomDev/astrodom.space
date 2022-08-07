@@ -2,7 +2,7 @@ $(document).ready(function() {
     if ($('body').hasClass('admin')) {
     let user = prompt("Username: ");
     let pass = prompt("Password: ")
-    if (user == "root" && pass == "240007") {
+    if (user == "root" && pass == "pass") {
         $('.cover').css('display', 'none')
     } else {
         alert("Incorrect username or password.")
