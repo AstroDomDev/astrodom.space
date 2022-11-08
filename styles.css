@@ -176,7 +176,7 @@ nav .contact img:hover {
 
 .info {
     box-sizing: border-box;
-    padding: 1vw;
+    padding: 1.5vw;
     width: 100%;
     text-align: center;
     z-index: 3;
@@ -185,7 +185,7 @@ nav .contact img:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, min-content);
-    gap: 3vw;
+    gap: 1.5vw;
     color: white;
     padding-top: 5vw;
 }
