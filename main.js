@@ -17,10 +17,10 @@ $(document).on("click", "#admin", function() {
 
 
 function intro() {
-    if ($('.slogan #4').hasClass('show')) {
+    if ($('.slogan #3').hasClass('show')) {
     var dlay = 1100
-    $('.slogan #4').removeClass('show')
-    $('.slogan #4').removeClass('final')
+    $('.slogan #3').removeClass('show')
+    $('.slogan #3').removeClass('final')
     } else {
         var dlay = 0
     }
@@ -35,15 +35,9 @@ function intro() {
                 setTimeout(function() {
                     $('.slogan #3').addClass('show')
                     setTimeout(function() {
-                        $('.slogan #3').removeClass('show')
-                        setTimeout(function() {
-                            $('.slogan #4').addClass('show')
-                            setTimeout(function() {
-                                $('.slogan #4').addClass('final')
-                                $('.slogan #planet').addClass('visible')
-                            },2000)
-                    }, 1100)
-                }, 2250)
+                        $('.slogan #3').addClass('final')
+                        $('.slogan #planet').addClass('visible')
+                    },2000)
             }, 1100)
         }, 2250)
     }, 1100)
