@@ -324,6 +324,7 @@ nav .contact img {
 .info {
     display: block;
     width: 100%;
+    height: min-content;
 }
 .info .box {
     margin-top: 2vh;
